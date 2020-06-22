@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "client-gestion-stock-produits": {
+    "ClientGestionsStockProduits": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -11,7 +11,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/client-gestion-stock-produits",
+            "outputPath": "dist/ClientGestionsStockProduits",
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
@@ -53,18 +53,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "client-gestion-stock-produits:build"
+            "browserTarget": "ClientGestionsStockProduits:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "client-gestion-stock-produits:build:production"
+              "browserTarget": "ClientGestionsStockProduits:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "client-gestion-stock-produits:build"
+            "browserTarget": "ClientGestionsStockProduits:build"
           }
         },
         "test": {
@@ -104,7 +104,7 @@
         }
       }
     },
-    "client-gestion-stock-produits-e2e": {
+    "ClientGestionsStockProduits-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -113,7 +113,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "client-gestion-stock-produits:serve"
+            "devServerTarget": "ClientGestionsStockProduits:serve"
           }
         },
         "lint": {
@@ -130,7 +130,7 @@
       }
     }
   },
-  "defaultProject": "client-gestion-stock-produits",
+  "defaultProject": "ClientGestionsStockProduits",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
